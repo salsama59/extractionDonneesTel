@@ -318,6 +318,7 @@ public class MenuOptions extends JFrame
 	}
 	
 	//Voir comment gérer les combo box
+	@SuppressWarnings("unchecked")
 	private void recupererValeurChamps()
 	{
 		listeValeursChamp = new HashMap <String, String>();
@@ -422,6 +423,7 @@ public class MenuOptions extends JFrame
 	}
 	
 	//Voir comment gérer les combo box
+	@SuppressWarnings("unchecked")
 	private void initialiserChamps()
 	{
 		

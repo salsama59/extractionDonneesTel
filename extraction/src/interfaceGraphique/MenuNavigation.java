@@ -15,7 +15,6 @@ import java.io.IOException;
 import java.util.HashMap;
 
 import javax.swing.BorderFactory;
-import javax.swing.Icon;
 import javax.swing.ImageIcon;
 import javax.swing.JButton;
 import javax.swing.JFileChooser;
@@ -29,7 +28,6 @@ import javax.swing.JTextField;
 import javax.swing.JToolBar;
 import javax.swing.filechooser.FileNameExtensionFilter;
 
-import Constantes.ConstantesApplication;
 import accesDonnees.RequeteSqlVerifierMigrationDetailsFacturation;
 import configuration.GestionConfiguration;
 import extraction.ExtracteurCSV;
@@ -65,12 +63,6 @@ public class MenuNavigation extends JFrame
 	
 	private JLabel etiquetteDestination;
 	
-	private JOptionPane popupPrevention;
-	
-	private JOptionPane popupErreur;
-	
-	private JOptionPane popupInformation;
-	
 	private JScrollPane pane;
 	
 	private EvenementBouton evenement = new EvenementBouton();
@@ -87,17 +79,9 @@ public class MenuNavigation extends JFrame
 	
 	private ImageIcon imgOptions = new ImageIcon("Ressources/screwdriver.png");
 	
-	private MenuNavigation instance = null;
-	
-	private ConstantesApplication constante;
-	
 	
 	public MenuNavigation(String titre, boolean affichage)
 	{
-		
-		constante = new ConstantesApplication ();
-		
-		instance = this;
 		
 		resolutionH = 800;
 		
@@ -143,12 +127,6 @@ public class MenuNavigation extends JFrame
 		
 		boutonChoixSource = new JButton(imgOuvrir);
 		boutonChoixDestination = new JButton(imgOuvrir);
-		
-		popupPrevention = new JOptionPane();
-		
-		popupErreur = new JOptionPane();
-		
-		popupInformation = new JOptionPane();
 		 
 		toolbar.add(boutonLire);
 		 
@@ -535,13 +513,4 @@ public class MenuNavigation extends JFrame
     	}
     	
     }
-
-	public MenuNavigation getInstance() {
-		return instance;
-	}
-
-
-	public void setInstance(MenuNavigation instance) {
-		this.instance = instance;
-	}
 }
