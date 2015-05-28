@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Configuration>
+  <url>
+    <fichier_source>C:\Users\saul\Documents\econocom-osiatis\Projet d'automatisation de processus\Documentations\Jeux de données\Jeu procedure extraction coût téléphone</fichier_source>
+    <fichier_destination>C:\Users\saul\Documents\econocom-osiatis\Projet d'automatisation de processus\Documentations</fichier_destination>
+  </url>
+  <type_separateur>;</type_separateur>
+  <base_donnees>
+    <nom>Db_Detail_telephone</nom>
+    <adresse>localhost</adresse>
+    <port>5432</port>
+    <utilisateur>postgres</utilisateur>
+    <mot_de_passe>osiatis2015</mot_de_passe>
+  </base_donnees>
+  <etiquette_Filtre>Code Uf</etiquette_Filtre>
+</Configuration>

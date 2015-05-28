@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<classpath>
+	<classpathentry excluding="extraction/extracteur.java" kind="src" path="src"/>
+	<classpathentry kind="lib" path="C:/Users/saul/Documents/econocom-osiatis/Projet d&apos;automatisation de processus/Api/jexcelapi_2_6_12/jexcelapi/jxl.jar"/>
+	<classpathentry kind="lib" path="Ressources/postgresql-9.3-1102.jdbc41.jar"/>
+	<classpathentry kind="con" path="org.eclipse.jdt.launching.JRE_CONTAINER"/>
+	<classpathentry kind="lib" path="Ressources/jdom-2.0.5.jar"/>
+	<classpathentry kind="output" path="bin"/>
+</classpath>
