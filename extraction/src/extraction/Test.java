@@ -1,8 +1,6 @@
 package extraction;
 
-import configuration.GestionConfiguration;
 import interfaceGraphique.MenuNavigation;
-import interfaceGraphique.MenuOptions;
 
 public class Test 
 {
