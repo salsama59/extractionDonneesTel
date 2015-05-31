@@ -28,6 +28,7 @@ import javax.swing.JTextField;
 import javax.swing.JToolBar;
 import javax.swing.filechooser.FileNameExtensionFilter;
 
+import Constantes.ConstanteMessagesUtilisateur;
 import accesDonnees.RequeteSqlVerifierMigrationDetailsFacturation;
 import configuration.GestionConfiguration;
 import extraction.ExtracteurCSV;
@@ -404,8 +405,8 @@ public class MenuNavigation extends JFrame
     				else
     				{
     					
-    					String titre = "Informations sur la connexion";
-						String message = "La connexion à la base de données n'a pas pu être effectuée veuillez modifier la configuration.";
+    					String titre = ConstanteMessagesUtilisateur.TITRE_INFO_CONNEXION;
+						String message = ConstanteMessagesUtilisateur.MESSAGE_INFO_CONNEXION_FAIL;
 						int typeDeMessage = JOptionPane.WARNING_MESSAGE;
 						Object icone = null;
     					
@@ -464,8 +465,8 @@ public class MenuNavigation extends JFrame
     					if(extractionFaite)
     					{
     						
-    						titre = "Informations sur la migration";
-    						message = "La migration concernant ces données a été effectuée avec succès.";
+    						titre = ConstanteMessagesUtilisateur.TITRE_INFO_MIGRATION;
+    						message = ConstanteMessagesUtilisateur.MESSAGE_INFO_MIGRATION_SUCCESS;
     						typeDeMessage = JOptionPane.INFORMATION_MESSAGE;
     						
     						ext.preparerMigrationVersBaseDonnees();
@@ -478,8 +479,8 @@ public class MenuNavigation extends JFrame
     					else
     					{
     						
-    						titre = "Informations sur la connexion";
-    						message = "La connexion à la base de données n'a pas pu être effectuée veuillez modifier la configuration.";
+    						titre = ConstanteMessagesUtilisateur.TITRE_INFO_CONNEXION;
+    						message = ConstanteMessagesUtilisateur.MESSAGE_INFO_CONNEXION_FAIL;
     						typeDeMessage = JOptionPane.WARNING_MESSAGE;
     						
     						ComunicationUtilisateur.afficherMessageUtilisateur(titre, message, typeDeMessage, icone);
@@ -488,9 +489,9 @@ public class MenuNavigation extends JFrame
     				}
     				else
     				{
-    					String titre = "Informations sur la migration";
+    					String titre = ConstanteMessagesUtilisateur.TITRE_INFO_MIGRATION;
     					
-    					String message = "La migration concernant ces données a déjà été effectuée une fois.";
+    					String message = ConstanteMessagesUtilisateur.MESSAGE_INFO_MIGRATION_FAIL;
     					
     					int typeDeMessage = JOptionPane.WARNING_MESSAGE;
     					

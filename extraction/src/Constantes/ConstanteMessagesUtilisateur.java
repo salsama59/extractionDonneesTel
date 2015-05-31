@@ -1,6 +1,6 @@
 package Constantes;
 
-public class ConstanteMessagesUtilisateur 
+public class ConstanteMessagesUtilisateur
 {
 	
 	public static String TITRE_INFO_CONNEXION = "Informations sur la connexion";

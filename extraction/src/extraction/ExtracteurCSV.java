@@ -18,6 +18,7 @@ import java.util.List;
 
 import javax.swing.JOptionPane;
 
+import Constantes.ConstanteMessagesUtilisateur;
 import Constantes.ConstantesApplication;
 import accesDonnees.RequeteSqlInsertDetailsFacturation;
 import accesDonnees.RequeteSqlSelectEtiquetteType;
@@ -68,9 +69,9 @@ public class ExtracteurCSV extends ConstantesApplication
 		else
 		{
 			
-			String titre = "Informations de connexion";
+			String titre = ConstanteMessagesUtilisateur.TITRE_INFO_CONNEXION;
 			
-			String message = "La connexion à la base de données n'a pas pu être effectuée veuillez vérifiez la configuration";
+			String message = ConstanteMessagesUtilisateur.MESSAGE_INFO_CONNEXION_FAIL;
 			
 			int typeDeMessage = JOptionPane.WARNING_MESSAGE;
 			
