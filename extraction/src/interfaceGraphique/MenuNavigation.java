@@ -34,6 +34,7 @@ import configuration.GestionConfiguration;
 import extraction.ExtracteurCSV;
 
 
+@SuppressWarnings("serial")
 public class MenuNavigation extends JFrame
 {
 	private String cheminSelectionne;
@@ -508,7 +509,8 @@ public class MenuNavigation extends JFrame
     		}
     		else if(source == boutonOptions)
     		{
-    			MenuOptions m = new MenuOptions(ext.getListEtiquette());
+    			@SuppressWarnings("unused")
+				MenuOptions menuOption = new MenuOptions(ext.getListEtiquette());
     		}
     		
     	}

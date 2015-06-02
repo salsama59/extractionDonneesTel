@@ -30,6 +30,7 @@ import Constantes.ConstantesApplication;
 import accesDonnees.RequeteSqlSelectEtiquetteType;
 import configuration.GestionConfiguration;
 
+@SuppressWarnings("serial")
 public class MenuOptions extends JFrame
 {
 	
@@ -85,6 +86,7 @@ public class MenuOptions extends JFrame
 	
 	private GestionConfiguration configurationApplication;
 	
+	@SuppressWarnings("unused")
 	private ConstantesApplication constante;
 	
 	public MenuOptions(List<String> etiquettes)

@@ -464,7 +464,6 @@ public class ExtracteurCSV extends ConstantesApplication
 	
 	public String recupererTypeDonnees(String ligne)
 	{
-		int position = -1;
 		
 		String typeDonnees = null;
 		
@@ -474,7 +473,6 @@ public class ExtracteurCSV extends ConstantesApplication
 					
 			if(ligne.contains(typeDonnees))
 			{
-				position = i;
 				break;
 			}
 		}

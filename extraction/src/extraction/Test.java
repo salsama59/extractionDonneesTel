@@ -10,11 +10,8 @@ public class Test
 	public static void main(String[] args) 
 	{
 		
+		@SuppressWarnings("unused")
 		MenuNavigation menu = new MenuNavigation("application d'extraction" , true);
-		
-		
-		//GestionConfiguration g = new GestionConfiguration();
-		//g.recupererConfiguration();
 
 	}
 }
